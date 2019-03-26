@@ -8,5 +8,8 @@ Stack: Node, JavaScript, React, Bootstrap, xml-js, file-saver
 ### Screenshot
 ![Screenshot](./docs/Screenshot.png)
 
-
+## Getting Started
+- cd into intern2019
+- Run npm install
+- To run server run NPM START
 
