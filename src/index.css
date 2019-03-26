@@ -1,0 +1,11 @@
+#root {
+    margin: 2%;
+}
+
+.button-spacing {
+    margin-bottom: 10%;
+}
+
+.btn-light {
+    background-color: #ced2d6;
+}
