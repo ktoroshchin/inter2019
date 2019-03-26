@@ -1,5 +1,5 @@
 # Intern Assignmet for Rebel
-Visit: please give 30sec for app to wakу up  
+Visit: please give 30sec for app to wake up  
 https://key-value-to-xml.herokuapp.com/ 
 
 A user-friendly single-page web application based on create-react-app to create <key>=<value> pairs and export it as XML file.
