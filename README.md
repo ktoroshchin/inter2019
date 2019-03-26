@@ -1,5 +1,7 @@
 # Intern Assignmet for Rebel
-Visit: https://ridessshare.herokuapp.com/
+Visit: please give 30sec for app to wakу up  
+https://key-value-to-xml.herokuapp.com/ 
+
 A user-friendly single-page web application based on create-react-app to create <key>=<value> pairs and export it as XML file.
 
 ## Technical Specifications
