@@ -13,7 +13,6 @@ import ClearList from './buttons/ClearList';
 import ExportXml from './buttons/ExportXml';
 
 //dependecies
-import fileSaver from 'file-saver';
 import convert from 'xml-js';
 import _ from 'lodash';
 
@@ -102,14 +101,8 @@ class App extends Component {
         let exportObj = data.map((pair) => {
             return {key: pair.key, value: pair.value}
         });
-        let dataArray = [convert.js2xml(exportObj, { compact: true, spaces: 4 })]
-        return dataArray;
-    }
-
-    //download data as xml file 
-    onDownload = (event) => {
-      let xmlFile = new Blob(this.getXmlData(),{type: "text/plain;charset=utf-8"})
-      fileSaver.saveAs(xmlFile, "keyvalues.xml");
+        let dataConverted = convert.js2xml(exportObj, { compact: true, spaces: 2 })
+        return 'data:application/xml;charset=utf-8,'+ encodeURIComponent(dataConverted)
     }
 
     render(){
@@ -122,7 +115,9 @@ class App extends Component {
                     <AddKeyValue onAdd={this.onAdd} />
                     <DeleteSelected  onDelete={this.onDelete} />
                     <ClearList onClearList={this.onClearList} />
-                    <ExportXml onDownload={this.onDownload} />
+                    <a style={{textDecoration: 'none'}} href={this.getXmlData()} download='keyvalue.xml'>
+                        <ExportXml />
+                    </a>
                     <SortByKey  onKeySort={this.onKeySort} />
                     <SortByValue onValueSort={this.onValueSort} />               
                 </div>
