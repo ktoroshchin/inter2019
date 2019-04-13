@@ -6,6 +6,7 @@ const InputField = (props) => {
             className="form-control"
             value={props.inputValue}
             onChange={props.onInputChange} 
+            placeholder="key=value"
         />
     )
 };
