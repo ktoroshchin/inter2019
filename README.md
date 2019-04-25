@@ -2,7 +2,7 @@
 Visit: please give 30sec for app to wake up  
 https://key-value-to-xml.herokuapp.com/ 
 
-A user-friendly single-page web application based on create-react-app to create <key>=<value> pairs and export it as XML file.
+A user-friendly single-page web application based on create-react-app to create 'key'='value' pairs and export it as XML file.
 
 ## Task
 
@@ -13,7 +13,7 @@ A user-friendly single-page web application based on create-react-app to create 
     b. Keys and value can only contain alpha-numeric characters
     
     c. The equal sign is used to delimit the pair
-    
+
     d. Spaces before and after the equal sign should be ignored
 
 2. As a user I want to remove a key/value pair from the list so I can remove ones I don’t want anymore.
